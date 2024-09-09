@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Poll System</h1>
+        <div class="poll">
+            <h2>What is your favorite Web Frameworks?</h2>
+            <div class="options">
+                <div class="option">
+                    <input type="radio" id="option1" name="poll" value="option1">
+                    <label for="option1">React</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="option2" name="poll" value="option2">
+                    <label for="option2">Angular</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="option3" name="poll" value="option3">
+                    <label for="option3">ASP.NET Core</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="option4" name="poll" value="option4">
+                    <label for="option4">Vue.js</label>
+                </div>
+            </div>
+            <button onclick="submitVote()">Submit vote</button>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
